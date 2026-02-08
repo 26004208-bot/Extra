@@ -1,0 +1,42 @@
+let numerosecret = Math.floor(Math.random() * 9) + 1;
+let numeroUsuario;
+
+//El bucle "while" se repite Mientras la condicion sea verdadera
+do {
+  numeroUsuario = parseInt(prompt("Ingresa un numero entre 1 y 9 :"));
+} while (numeroUsuario < 1 || numeroUsuario > 9);
+
+let preddi = prompt(
+  "¿Tu numero es'mayor', 'menor' o 'igual' al de la computadora?",
+).toLowerCase();
+
+let mensajeResultado = "";
+
+if (numeroUsuario > numerosecret && preddi === "mayor") {
+  mensajeResultado = "!Lograstes adivinar!";
+} else if (numeroUsuario < numerosecret && preddi === "menor") {
+  mensajeResultado = "!Lograstes adivinar!";
+} else if (numeroUsuario === numerosecret && preddi === "igual") {
+  mensajeResultado = "!Lograstes adivinar!";
+} else {
+  mensajeResultado = "NO LO LOGRASTES.";
+}
+alert(
+  " La computadora eligio : " +
+    numerosecret +
+    ", usted eligio : " +
+    numeroUsuario +
+    "." +
+    mensajeResultado,
+);
+
+let jugarOtraVez;
+do {
+  // 1. Generar numero secreto
+  // 2. pedir y validar numero del usuario
+  // 3. pedir prediccion
+  // 4. Mostrae resultado
+  jugarOtraVez = prompt("¿Quieres jugar otra vez ? (SI/NO)").toUpperCase();
+} while (jugarOtraVez === "SI");
+// Al salir del bucle (si elige No)
+alert("Nombre : [Tu Nombre] - Carnet : [Tu Carnet]");
