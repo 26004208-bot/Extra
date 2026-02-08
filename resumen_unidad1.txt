@@ -1,0 +1,1 @@
+En la Unidad 1 aprendí sobre lógica proposicional, valores de verdad y cómo construir proposiciones correctamente. Estos temas me ayudaron a entender mejor el razonamiento lógico en programación.
